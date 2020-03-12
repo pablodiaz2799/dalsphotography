@@ -1,4 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
+import { ɵNgClassImplProvider__POST_R3__ } from '@angular/common';
 
 //Route for content layout without sidebar, navbar and footer for pages like Login, Registration etc...
 

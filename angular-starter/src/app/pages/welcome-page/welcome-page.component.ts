@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { delay } from 'rxjs/operators';
+
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -6,5 +9,13 @@ import { Component } from '@angular/core';
   templateUrl: './welcome-page.component.html',
   styleUrls: ['./welcome-page.component.css']
 })
-export class WelcomePageComponent {
+export class WelcomePageComponent implements OnInit{
+  constructor(private route: Router){
+
+  }
+
+  ngOnInit(): void {
+    // setTimeout(() => {this.route.navigateByUrl('full-layout');},2000);
+  }
+  
 }

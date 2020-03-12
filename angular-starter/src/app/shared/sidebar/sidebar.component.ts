@@ -9,6 +9,7 @@ import { ConfigService } from '../services/config.service';
 @Component({
   selector: "app-sidebar",
   templateUrl: "./sidebar.component.html",
+  styleUrls: ["./sidebar.component.css"],
   animations: customAnimations
 })
 export class SidebarComponent implements OnInit, AfterViewInit {

@@ -9,5 +9,9 @@ export const Full_ROUTES: Routes = [
   {
     path: 'full-layout',
     loadChildren: () => import('../../pages/full-layout-page/full-pages.module').then(m => m.FullPagesModule)
+  },
+  {
+    path: 'art',
+    loadChildren: () => import('../../pages/art-page/art-page.module').then(m => m.ArtPageModule)
   }
 ];
