@@ -1,0 +1,61 @@
+.flex-layout{
+    display: flex;
+    height: 90vh;
+    width: 98vw;
+    margin-left: 1%;
+}
+
+.colLeft{
+    flex:1;
+    width: 100%;
+    margin-right: 1%;
+}
+
+.colRight{
+    flex:1;
+    width: 100%;
+}
+
+.imgContainer{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.catImage{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.divImage{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(100, 100, 100, 0.75);
+    justify-content: center; 
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    cursor: pointer;
+}
+
+.divImage:hover{
+    position: absolute;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    align-self: center;
+}
