@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.flex-layout{
+    display: flex;
+    height: 10vh;
+}
+
+.divLeft{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.divRight{
+    display: flex;
+    flex:1;
+    align-items: center;
+}
+
+.homeLogo{
+    width: 26%;
+    height: auto;
+    margin-left: 16%;
+}
+
+.listItem{
+    margin-left: 5%;
+    margin-right: 5%;
+    outline: none;
+}
+
+.listContainer{
+    flex: 1;
+    display: flex;
+    padding-left: 15%;
+    outline: none;
+}
+
+.active{
+    color: gray;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}

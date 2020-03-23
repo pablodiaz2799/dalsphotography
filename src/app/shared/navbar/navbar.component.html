@@ -1,0 +1,14 @@
+<div class="flex-layout">
+    <div class="divLeft">
+        <img src="../../../assets/logos/navLogo.png" class="homeLogo" />
+    </div>
+    <div class="divRight">
+        <div class="listContainer">
+            <div *ngFor="let menuItem of menuItems" [routerLink]="menuItem.path" class="listItem">
+                <p style="outline: none; cursor: pointer;" routerLinkActive="active" id="menuItem.title"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    {{menuItem.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
