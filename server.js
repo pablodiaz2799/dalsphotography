@@ -6,8 +6,9 @@ const app = express();
 app.use(express.static(__dirname + '/dist/dalsphotography'));
 
 // Send all requests to index.html
+
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/dalsphotography/index.html'));
+  res.sendFile('index.html', {root: 'dist/dalsphotography/'});
 });
 
 // default Heroku PORT
