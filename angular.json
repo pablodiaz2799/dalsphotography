@@ -134,5 +134,8 @@
       }
     }
   },
-  "defaultProject": "dalsphotography"
+  "defaultProject": "dalsphotography",
+  "cli": {
+    "analytics": false
+  }
 }
