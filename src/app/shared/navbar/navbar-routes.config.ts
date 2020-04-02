@@ -5,7 +5,11 @@ export const ROUTES: RouteInfo[] = [
         path: '/home', title: 'HOME', submenu: [], hasSubmenu: false,
     },
     {
-        path: '/categories', title: 'CATEGORIES', submenu: [], hasSubmenu: false,
+        path: '', title: 'CATEGORIES', submenu: [
+            {
+                path: '/animals', title: 'ANIMALS', submenu: [], hasSubmenu: false,
+            }
+        ], hasSubmenu: true,
     },
     {
         path: '/about', title: 'ABOUT', submenu: [], hasSubmenu: false,

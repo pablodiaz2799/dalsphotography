@@ -1,5 +1,33 @@
 <div class="flex-layout">
-    <div class="colRight">
+    <div class="mainCol">
+        <mdb-carousel [noPause]="true" [isControls]="false" class="carousel slide" [animation]="'slide'">
+            <mdb-carousel-item class="containerImg">
+                <img class="homeImg" src="../../assets/animals/cabra2.jpg"
+                    alt="First slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item class="containerImg">
+                <img class="homeImg" src="../../assets/animals/basural2.jpg"
+                    alt="Second slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item class="containerImg">
+                <img class="homeImg" src="../../assets/animals/gaviota.jpg"
+                    alt="Third slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item class="containerImg">
+                <img class="homeImg" src="../../assets/animals/caballoRisa.jpg"
+                    alt="First slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item class="containerImg">
+                <img class="homeImg" src="../../assets/cars/mini.JPG"
+                    alt="Second slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item class="containerImg">
+                <img class="homeImg" src="../../assets/flora-fungi/lirios.jpg"
+                    alt="Third slide">
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+    <!-- <div class="colRight">
         <mdb-carousel [noPause]="true"  [isControls]="false" class="carousel slide carousel-fade" [animation]="'fade'">
             <mdb-carousel-item class="containerImg">
                 <img class="homeImg" src="../../assets/animals/caballoRisa.jpg"
@@ -14,9 +42,8 @@
                     alt="Third slide">
             </mdb-carousel-item>
         </mdb-carousel>
-        <!-- <img src="../../assets/homepage/falsaYara.jpg" class="homeImg"> -->
-    </div>
-    <div class="colLeft">
+    </div> -->
+    <!-- <div class="colLeft">
         <mdb-carousel [isControls]="false" class="carousel slide carousel-fade" [animation]="'fade'">
             <mdb-carousel-item class="containerImg">
                 <img class="homeImg" src="../../assets/animals/caballosFila.jpg"
@@ -31,5 +58,5 @@
                     alt="Third slide">
             </mdb-carousel-item>
         </mdb-carousel>
-    </div>
+    </div> -->
 </div>

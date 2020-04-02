@@ -3,6 +3,12 @@
     height: 100%;
 }
 
+.mainCol{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
 .colRight{
     height: 90vh;
     width: 100%;

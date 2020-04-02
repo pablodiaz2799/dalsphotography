@@ -4,10 +4,20 @@
     </div>
     <div class="divRight">
         <div class="listContainer">
-            <div *ngFor="let menuItem of menuItems" [routerLink]="menuItem.path" class="listItem">
-                <p style="outline: none; cursor: pointer;" routerLinkActive="active" id="menuItem.title"
+            <div *ngFor="let menuItem of menuItems" class="listItem">
+                <div *ngIf="menuItem.hasSubmenu" class="dropdown">
+                    <p class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none; cursor: pointer;">
+                        {{menuItem.title}}  
+                      </p>
+                      <div class="dropdown-menu">
+                        <a *ngFor="let submenuItem of menuItem.submenu" class="dropdown-item" [routerLink]="submenuItem.path" routerLinkActive="actived">{{submenuItem.title}}</a>
+                      </div>
+                </div>
+                <div style="outline: none; cursor: pointer;" *ngIf="!menuItem.hasSubmenu" [routerLink]="menuItem.path">
+                    <p style="outline: none; cursor: pointer;" routerLinkActive="active" id="menuItem.title"
                     [routerLinkActiveOptions]="{exact: true}">
                     {{menuItem.title}}</p>
+                </div>
             </div>
         </div>
     </div>
