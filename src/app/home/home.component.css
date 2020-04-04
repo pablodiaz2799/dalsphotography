@@ -37,3 +37,10 @@
     object-fit: cover;
     overflow: hidden;
 }
+
+/* .modal-content, .modal-body, .modal-dialog, .modal-lg{
+    width: auto;
+    align-self: center;
+    margin: 0;
+
+} */

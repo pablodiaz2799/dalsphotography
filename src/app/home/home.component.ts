@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {List1} from './img-routes.config';
+import {homeRoutes} from '../shared/routes/img.routes';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +7,11 @@ import {List1} from './img-routes.config';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  public images;
   constructor() { }
 
   ngOnInit(): void {
+    this.images = homeRoutes;
   }
 
 }
