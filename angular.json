@@ -33,7 +33,8 @@
               "node_modules/animate.css/animate.css",
               "node_modules/minireset.css/minireset.css",
               "src/styles.scss",
-              "node_modules/igniteui-angular/styles/igniteui-angular.css"
+              "node_modules/igniteui-angular/styles/igniteui-angular.css",
+              "node_modules/ngx-lightbox/lightbox.css"
             ],
             "scripts": [
               "node_modules/chart.js/dist/Chart.js",

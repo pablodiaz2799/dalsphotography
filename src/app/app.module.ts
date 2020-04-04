@@ -10,8 +10,8 @@ import { FullLayoutComponent } from './layouts/full-layout/full-layout.component
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { AnimalsComponent } from './animals/animals.component';
-;
+import { LightboxModule } from 'ngx-lightbox';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { AnimalsComponent } from './animals/animals.component';
     NgbModule,
     BrowserAnimationsModule,
     IgxDropDownModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    LightboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
