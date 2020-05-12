@@ -13,7 +13,6 @@ import { NavBarComponent } from './navbar/navbar.component';
     exports: [
         CommonModule,
         NavBarComponent,
-
     ],
     imports: [
         RouterModule,

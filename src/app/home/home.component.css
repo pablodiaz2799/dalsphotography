@@ -38,9 +38,8 @@
     overflow: hidden;
 }
 
-/* .modal-content, .modal-body, .modal-dialog, .modal-lg{
-    width: auto;
-    align-self: center;
-    margin: 0;
-
-} */
+.lb-outerContainer, .lb-dataContainer{
+    max-width: 10px;
+    width: auto!important;
+    height: auto!important;
+}
