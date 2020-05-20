@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+.menu-sidebar{
+    display: none;
+}
+
 .flex-layout{
     display: flex;
     height: 10vh;
@@ -44,3 +48,167 @@ p{
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
+
+.sidebar-menu-icon{
+    display: none;
+}
+
+@media (max-width: 1280px) {
+
+    .homeLogo{
+        width: 140px;
+        height: auto;
+        margin-left: 16%;
+    }
+
+    p{
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    a{
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .sidebar-menu-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .listContainer{
+        flex: 1;
+        display: flex;
+        padding-left: 0px;
+        justify-content: flex-end;
+        outline: none;
+    }
+
+    p{
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    a{
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .sidebar-menu-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    .homeLogo{
+        width: 140px;
+        height: auto;
+        margin-left: 8%;
+    }
+
+    p{
+        font-size: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    a{
+        font-size: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .sidebar-menu-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .divRight{
+        display: flex;
+        flex:1;
+        align-items: center;
+
+    }
+
+    .listItem div{
+        display: none;
+    }
+    .flex-layout {
+        display: flex;
+        height: 10vh;
+        width: 100vw;
+    }
+    .left-col {
+        flex: 1;
+    }
+    .right-col {
+        display: flex;
+        flex: 1;
+    }
+    .homeLogo {
+        width: 180px;
+        height: auto;
+        margin-top: 5%;
+    }
+    .menuContainer {
+        flex: 1;
+        text-align: right;
+    }
+    .menu-sidebar {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        background: white;
+        transition: 0.3s;
+        right: 0px;
+        top: 0px;
+    }
+
+    .top-menu{
+        flex:1;
+        width:100%;
+        text-align: center;
+    }
+    .bot-menu{
+        flex:9;
+    }
+
+    .top-menu-img{
+        padding-top: 5%;
+        height: auto;
+        width: 40%;
+    }
+
+    .sidebar-menu-icon {
+        display: block;
+        margin-left: 75%;
+        width: 20%;
+        height: auto;
+        margin-top: 1%;
+    }
+    .button-container{
+        height: 15%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .button-container p{
+        font-size: 18px;
+        font-family: Lato;
+        letter-spacing: 0.03em;
+        width:25%;
+        margin-left: 37.5%;
+    }
+
+    .cross-menu{
+        width: 10%;
+        height: auto;
+        margin-top: 1%;
+    }
+
+
+}
+

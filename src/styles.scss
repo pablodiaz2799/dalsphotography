@@ -8,3 +8,24 @@ body {
   cursor: pointer;
   opacity: 0;
 }
+
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(../src/assets/fonts/RobotoCondensed/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../src/assets/fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: bold;
+  src: url(../src/assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url(../src/assets/fonts/Lato/Lato-Regular.ttf);
+}

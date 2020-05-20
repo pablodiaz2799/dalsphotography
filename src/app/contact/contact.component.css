@@ -1,111 +1,231 @@
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+@media (min-width: 1281px) {
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+
+    .background {
+        height: 90vh;
+        width: 100%;
+        background-image: url('../../assets/Iceland/Sol-de-Medianoche-en-Islandia.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .form-flex{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 30%;
+        height: 50vh;
+        margin-top: 10%;
+        background-color: white;
+    }
+
+    .form-title{
+        flex:2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-title{
+        flex:2;
+        align-self: center;
+    }
+
+    .flex-title p{
+        font-size: 58px;
+        letter-spacing: 0.2em;
+    }
+
+    .flex-subtitle{
+        justify-self: flex-start;
+        flex:1;
+    }
+
+    .flex-subtitle p{
+        font-size: 15px;
+        margin-left: 30%;
+        margin-right: 30%;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    .form-body{
+        flex:3;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .top-row{
+        flex:2;
+        display: inline-block;
+    }
+
+    .top-row input{
+        height: 60%;
+        width: 48%;
+        border: 1px solid black;
+    }
+
+    .flex-input{
+        margin-right: 4%;
+    }
+
+    .flex-input.second{
+        right: 0px;
+    }
+
+    .bot-row{
+        flex:3;
+    }
+
+    .bot-row textarea{
+        resize: none;
+        width: 100%;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    .form-button{
+        flex:1;
+    }
+
+    .form-button input{
+        background-color: white;
+        border: 1px solid black;
+        height: 60%;
+        width: 25%;
+        margin-left: 35%;
+        transition: 0.5s;
+    }
+
+    .form-button input:hover{
+        background-color: black;
+        color: white;
+    }
 }
 
-.background {
-    height: 90vh;
-    width: 100%;
-    background-image: url('../../assets/Iceland/Sol-de-Medianoche-en-Islandia.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
+@media (min-width: 1025px) and (max-width: 1280px){
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+
+    .background {
+        height: 90vh;
+        width: 100%;
+        background-image: url('../../assets/Iceland/Sol-de-Medianoche-en-Islandia.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .form-flex{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 30%;
+        height: 50vh;
+        margin-top: 10%;
+        background-color: white;
+    }
+
+    .form-title{
+        flex:2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-title{
+        flex:2;
+        align-self: center;
+    }
+
+    .flex-title p{
+        font-size: 40px;
+        letter-spacing: 0.2em;
+    }
+
+    .flex-subtitle{
+        justify-self: flex-start;
+        flex:1;
+    }
+
+    .flex-subtitle p{
+        font-size: 12px;
+        margin-left: 30%;
+        margin-right: 30%;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    .form-body{
+        flex:3;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .top-row{
+        flex:2;
+        display: inline-block;
+    }
+
+    .top-row input{
+        height: 60%;
+        width: 48%;
+        border: 1px solid black;
+        font-size: 14px;
+    }
+
+    .flex-input{
+        margin-right: 4%;
+    }
+
+    .flex-input.second{
+        right: 0px;
+    }
+
+    .bot-row{
+        flex:3;
+    }
+
+    .bot-row textarea{
+        resize: none;
+        width: 100%;
+        height: 80%;
+        border: 1px solid black;
+        font-size: 14px;
+    }
+
+    .form-button{
+        flex:1;
+    }
+
+    .form-button input{
+        background-color: white;
+        border: 1px solid black;
+        height: 60%;
+        width: 25%;
+        margin-left: 35%;
+        transition: 0.5s;
+        font-size: 14px;
+    }
+
+    .form-button input:hover{
+        background-color: black;
+        color: white;
+    }
 }
 
-.form-flex{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-left: 30%;
-    height: 50vh;
-    margin-top: 10%;
-    background-color: white;
-}
-
-.form-title{
-    flex:2;
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-title{
-    flex:2;
-    align-self: center;
-}
-
-.flex-title p{
-    font-size: 58px;
-    letter-spacing: 0.2em;
-}
-
-.flex-subtitle{
-    justify-self: flex-start;
-    flex:1;
-}
-
-.flex-subtitle p{
-    font-size: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
-    line-height: 1em;
-    text-align: center;
-}
-
-.form-body{
-    flex:3;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 10%;
-}
-
-.top-row{
-    flex:2;
-    display: inline-block;
-}
-
-.top-row input{
-    height: 60%;
-    width: 48%;
-    border: 1px solid black;
-}
-
-.flex-input{
-    margin-right: 4%;
-}
-
-.flex-input.second{
-   right: 0px;
-}
-
-.bot-row{
-    flex:3;
-}
-
-.bot-row textarea{
-    resize: none;
-    width: 100%;
-    height: 80%;
-    border: 1px solid black;
-}
-
-.form-button{
-    flex:1;
-}
-
-.form-button input{
-    background-color: white;
-    border: 1px solid black;
-    height: 60%;
-    width: 25%;
-    margin-left: 35%;
-    transition: 0.5s;
-}
-
-.form-button input:hover{
-    background-color: black;
-    color: white;
-}

@@ -1,67 +1,163 @@
-.mainCol {
+.main-col{
+    flex:1;
     display: flex;
-    width: 100%;
+}
+
+.container-col{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.left-col{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
     height: 90vh;
 }
 
-.colLeft {
+.right-col{
     flex: 1;
-    width: 100%;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
 }
 
-.colRight {
+.title-flex{
     flex: 1;
-    width: 100%;
-    background-color: rgb(46, 45, 45);
+    margin-right: 45%;
+    margin-left: 5%;
+    margin-top: 7vh;
 }
 
-.absoluteImg {
-    position: absolute;
-    width: auto;
-    height: 80%;
-    margin-left: 15%;
-    margin-top: 5vh;
-}
-
-.absoluteTitle {
-    position: absolute;
-    font-size: 2.3vw;
+.title-flex p{
+    font-size: 1.8vw;
     font-weight: bold;
-    color: white;
-    margin-left: 34%;
-    margin-top: 5%;
-    letter-spacing: 0.47em;
 }
 
-.aboutPrgrph {
-    width: 60%;
-    position: relative;
-    margin-left: 9.5%;
-    margin-top: 21%;
+.subtitle-flex{
+    flex: 1;
+    margin-right: 45%;
+    margin-left: 5%;
 }
 
-.photoTxt {
-    color: rgb(168, 168, 168);
-    font-size: 24px;
-    letter-spacing: 0.2em;
+.subtitle-flex p{
+    font-weight: bold;
+    font-size: 1.5vw;
 }
 
-.meTxt {
-    color: white;
-    font-size: 30px;
-    letter-spacing: 0.1em;
+.profile-img {
+    height: 500px;
+    width: auto;
+    margin-top: 10vh;
+    margin-right: 5%;
+    margin-left: 10%;
 }
 
-.whiteLine {
-    background-color: white;
-    height: 2px;
-    width: 100%;
+.paragraph-flex {
+    font-family: Lato, serif;
+    flex: 8;
+    width: 500px;
+    margin-left: 5%;
 }
 
-.aboutTxt {
-    z-index: -1;
-    color: white;
-    margin-bottom: 3%;
-    line-height: 1em;
+.paragraph-flex p {
+    font-family: Lato, serif;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+@media (max-width: 1280px){
+    .profile-img{
+        height: 450px;
+        width: auto;
+        margin-top: 10vh;
+        margin-right: 5%;
+        margin-left: 10%;
+    }
+
+    .paragraph-flex{
+        font-family: Lato, serif;
+        flex: 8;
+        width: 450px;
+        margin-left: 5%;
+    }
+
+    .paragraph-flex p{
+        font-family: Lato, serif;
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width: 1024px){
+    .profile-img{
+        height: 350px;
+        width: auto;
+        margin-top: 10vh;
+        margin-right: 5%;
+        margin-left: 10%;
+    }
+
+    .paragraph-flex{
+        flex: 8;
+        width: 350px;
+        margin-left: 5%;
+    }
+
+    .paragraph-flex p{
+        font-family: Lato, serif;
+        font-size: 12px;
+        line-height: 1.2em;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-col{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .left-col{
+        justify-content: center;
+        height: auto;
+    }
+
+    .right-col{
+        height: auto;
+    }
+
+    .profile-img{
+        height: 310px;
+        width: auto;
+        margin-top: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .paragraph-flex{
+        flex: 8;
+        width: 310px;
+        justify-self: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .title-flex{
+        margin: auto;
+    }
+
+    .title-flex p{
+        font-size: 24px;
+    }
+
+    .subtitle-flex{
+        margin: auto;
+    }
+
+    .subtitle-flex p{
+        font-size: 22px;
+    }
 }
