@@ -35,7 +35,7 @@
     "angular-bootstrap-md": "^9.0.0",
     "animate.css": "^3.7.2",
     "body-parser": "*",
-    "chart.js": "^2.5.0",
+    "chart.js": "^2.9.4",
     "express": "*",
     "hammerjs": "^2.0.8",
     "igniteui-angular": "^9.0.6",
